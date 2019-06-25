@@ -13,7 +13,9 @@ sidebar:
 
 ---
 
-![sharepoint-export]({{ site.url }}{{ site.baseurl }}/vba/images/sharepoint-to-excel-with-version.png){: .align-right}
+This will demonstrate how to export a document library to excel with a Version Number as a column.
+
+![export]({{ site.url }}{{ site.baseurl }}/vba/images/sharepoint-to-excel-with-version.jpg){: .align-right}
 
 When you have a SharePoint Document Library and use the ***Export to Excel*** feature, you may have noticed that document versions will not be exported to the workbook. This is the VBA-code created which reads the version-info from your SharePoint-document library and inserts the version-info into your Excel file.
 
