@@ -1,5 +1,5 @@
 ---
-Title: "Get a list from Excel and populate into a Drop Down List control in Word"
+Title: "Populate Drop Down options in Word from Excel"
 layout: single
 classes: wide
 categories:
@@ -13,7 +13,25 @@ sidebar:
   nav: sidebar-sample
 
 ---
-Get a list from Excel and populate into a Drop Down List control in Word.
+
+Manually typing each option for a drop-down list in word ***(drop-down list content control)*** is time consuming, but there is no native way to import a list you've made in Excel, or exported from a database to a workbook... to Word.
+
+## Getting our List Set Up
+There's a couple things we have to do first:  
+
+**Excel**
+- get your list into an excel workbook
+- do not put a header in A1, your first drop-down option goes in A1
+- your list options only in Column A
+- save and close the workbook
+
+**Word**
+- select the drop-down list control by clicking on the 3 dots on the top left
+
+**VBE Window**
+- VBA Reference to the Excel Object Model is required, via Tools|References -> Microsoft Excel...
+- rename the workbook path and sheet name to your requirements
+- run the macro
 
 ```vb
 '===================================================================================================
