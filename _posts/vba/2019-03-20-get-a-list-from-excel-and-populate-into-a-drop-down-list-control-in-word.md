@@ -29,7 +29,7 @@ There's a couple things we have to do first:
 - select the drop-down list control by clicking on the 3 dots on the top left
 
 **VBE Window**
-- VBA Reference to the Excel Object Model is required, via Tools arrow-alt-circle-right References long-arrow-alt-right Microsoft Excel...
+- VBA Reference to the Excel Object Model is required, via Tools &rarr; References &rarr; Microsoft Excel...
 - rename the workbook path and sheet name to your requirements
 - run the macro
 
