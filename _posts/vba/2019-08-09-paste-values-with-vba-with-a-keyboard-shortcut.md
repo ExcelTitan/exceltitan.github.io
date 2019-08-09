@@ -16,7 +16,7 @@ sidebar:
 
 This will show how to use VBA to paste values in Excel instead of formulas. You can bind this VBA macro to the Ctrl+Shift+V keyboard shortcut to make pasting even faster. The macro is smart enough to paste unformatted text, too.
 
-> This is one of the best tips I’ve seen in quite a while. I can’t believe I didn’t think of it! I want you all to extend a big thank you to wellsrPRO power user, Mitch, for submitting this macro to me via the wellsrPRO add-in.
+> This is one of the best tips I’ve seen in quite a while. I can’t believe I didn’t think of it! I want you all to extend a big thank you to wellsrPRO power user, Mitch, for submitting this macro to me via the wellsrPRO add-in.  
 https://wellsr.com/vba/2018/excel/vba-paste-values-in-excel-with-keyboard-shortcut/  
 
 ```vb
@@ -40,16 +40,16 @@ End Sub
 ```
 
 ## How the VBA Paste Values Macro Works
-First we to paste the contents of the clipboard two different ways. Let’s look at an example. In this example, the range `A1:B4` contains raw numbers and the range `D1:E4` squares those numbers using a formula. In the example, we have the Excel cells with formulas copied to our clipboard and we want to paste the values to another range.
+First we to paste the contents of the clipboard two different ways. Let’s look at an example. In this example, the range <span style="background-color: #F2F2F2">A1:B4</span> contains raw numbers and the range <span style="background-color: #F2F2F2">D1:E4</span> squares those numbers using a formula. In the example, we have the Excel cells with formulas copied to our clipboard and we want to paste the values to another range.
 
 ![paste-values-img1](/imgs/paste-values/paste-values-img1.png)
 
-First, we’ll show what happens if you copy and paste the cells like normal, using `Ctrl+c` and `Ctrl+v`.
+First, we’ll show what happens if you copy and paste the cells like normal, using <span style="background-color: #F2F2F2">Ctrl+c</span> and <span style="background-color: #F2F2F2">Ctrl+v</span>.
 
 ![paste-values-img2](/imgs/paste-values/paste-values-img2.png)
 
-Excel tries to outsmart you by pasting the formulas down to the relative cells. The range `D6:E9` now contains formulas trying to square the results in cells `A6:B9`. That’s not what we wanted! We want to paste the values themselves in the range `D6:E9`.
-To do that, we’ll run the PasteValues macro. The first thing the macro tries to do is paste the formulas as values. That works great! It will then try to paste the same content as unformatted text, but this won’t do anything and the output of the first attempt remains. Trying to paste cell values as unformatted text would normally generate an error, but we've bypassed the errors using the `On Error Resume Next` code, so we get these results:
+Excel tries to outsmart you by pasting the formulas down to the relative cells. The range <span style="background-color: #F2F2F2">D6:E9</span> now contains formulas trying to square the results in cells <span style="background-color: #F2F2F2">A6:B9</span>. That’s not what we wanted! We want to paste the values themselves in the range <span style="background-color: #F2F2F2">D6:E9</span>.
+To do that, we’ll run the PasteValues macro. The first thing the macro tries to do is paste the formulas as values. That works great! It will then try to paste the same content as unformatted text, but this won’t do anything and the output of the first attempt remains. Trying to paste cell values as unformatted text would normally generate an error, but we've bypassed the errors using the <span style="background-color: #F2F2F2">On Error Resume Next</span> code, so we get these results:
 
 ![paste-values-img3](/imgs/paste-values/paste-values-img3.png)
 
@@ -59,12 +59,12 @@ Well, this is where this small macro's brilliance really becomes evident. To sho
 
 ![paste-values-img4](/imgs/paste-values/paste-values-img4.png)
 
-We want to copy and paste the values from the table into Excel. If we copy the table from word and paste it normally, using `Ctrl+v`, Excel will again try to outsmart you by pasting the format, ugly border and all, into Excel. You’ll be left with something rather hideous, like this:
+We want to copy and paste the values from the table into Excel. If we copy the table from word and paste it normally, using <span style="background-color: #F2F2F2">Ctrl+v</span>, Excel will again try to outsmart you by pasting the format, ugly border and all, into Excel. You’ll be left with something rather hideous, like this:
 
 ![paste-values-img5](/imgs/paste-values/paste-values-img5.png)
 
-Now we want to do the same thing, but instead of pasting with `Ctrl+v`, we want to paste using the macro. Just like earlier, the PasteValues macro will attempt to paste the contents of your clipboard as values only. Since the contents of your clipboard didn’t originate from Excel, this would normally produce an error.  
-However, since we've bypassed the errors using the `On Error Resume Next` code, it tries the second method of pasting. This time, the second method, which pastes with unformatted text, works perfectly. No error is generated and you’re left with clean, unformatted, values pasted into Excel:
+Now we want to do the same thing, but instead of pasting with <span style="background-color: #F2F2F2">Ctrl+v</span>, we want to paste using the macro. Just like earlier, the PasteValues macro will attempt to paste the contents of your clipboard as values only. Since the contents of your clipboard didn’t originate from Excel, this would normally produce an error.  
+However, since we've bypassed the errors using the <span style="background-color: #F2F2F2">On Error Resume Next</span> code, it tries the second method of pasting. This time, the second method, which pastes with unformatted text, works perfectly. No error is generated and you’re left with clean, unformatted, values pasted into Excel:
 
 ![paste-values-img6](/imgs/paste-values/paste-values-img6.png)
 
