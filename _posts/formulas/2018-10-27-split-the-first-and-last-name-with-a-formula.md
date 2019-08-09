@@ -156,3 +156,26 @@ Here's a similar approach to split names with a suffix
 | **2** | Joe King, Jr.   | Joe            | King          | Jr.        |
 | **3** | Sue Flay, Ph.d  | Sue            | Flay          | Ph.d       |
 | **4** | Cory Ander, Sr. | Cory           | Ander         | Sr.        |
+
+## Last Name, First Name Suffix
+
+```vb
+' first name
+=MID(A2, SEARCH(" ", A2) + 1, SEARCH(" ", A2, SEARCH(" ", A2)+1) - SEARCH(" ", A2)-1)
+
+' last name
+=LEFT(A2, SEARCH(", ", A2) - 1)
+
+' suffix
+=RIGHT(A2, LEN(A2) - SEARCH("#", SUBSTITUTE(A2," ", "#", LEN(A2) - LEN(SUBSTITUTE(A2, " ", "")))))
+```
+
+| ~     | A                         | B              | C             | D          |
+|-------|---------------------------|----------------|---------------|------------|
+| **1** | **Name from Data Dource** | **First Name** | **Last Name** | **Suffix** |
+| **2** | King, Joe Mr              | Joe            | King          | Mr         |
+| **3** | Flay, Sue Dr              | Sue            | Flay          | Dr         |
+| **4** | Ander, Cory Mr            | Cory           | Ander         | Mr         |
+| **5** | Fletcher-Ball, Milo Mr    | Milo           | Fletcher-Ball | Mr         |
+| **6** | Sober, Alicia Mrs         | Alicia         | Sober         | Mrs        |
+| **7** | Fate, Celia Miss          | Celia          | Fate          | Miss       |
