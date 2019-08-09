@@ -18,7 +18,7 @@ This will show how to use VBA to paste values in Excel instead of formulas. You 
 
 > This is one of the best tips I’ve seen in quite a while. I can’t believe I didn’t think of it! I want you all to extend a big thank you to wellsrPRO power user, Mitch, for submitting this macro to me via the wellsrPRO add-in.  
 
-https://wellsr.com/vba/2018/excel/vba-paste-values-in-excel-with-keyboard-shortcut/  
+(https://wellsr.com/vba/2018/excel/vba-paste-values-in-excel-with-keyboard-shortcut/)  
 
 ```vb
 '==================================================================================================
