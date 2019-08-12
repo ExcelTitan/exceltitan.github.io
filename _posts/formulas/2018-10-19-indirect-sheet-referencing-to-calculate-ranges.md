@@ -17,7 +17,7 @@ sidebar:
 
 The INDIRECT function returns a reference to a range. You can use this function to create a reference that won't change if row or columns are inserted in the worksheet. Or, use it to create a reference from letters and numbers in other cells.
 
-Download the example workbook here: [Indirect Sheet Referencing to Calculate Ranges.xlsx](/example-files/indirect-sheet-referencing-to-calculate-ranges.xlsx)  
+Download the example workbook here: [Indirect Sheet Referencing to Calculate Ranges.xlsx](https://github.com/ExcelTitan/Excel_Formulas/raw/master/indirect-sheet-referencing-to-calculate-ranges.xlsx)  
 
 #### What does it do? 
 Returns a reference to a cell, or a range of cells of a sheet. 
