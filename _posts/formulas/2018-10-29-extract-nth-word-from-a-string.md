@@ -15,7 +15,7 @@ sidebar:
 
 If you need to get the nth word in a text string (i.e. a sentence, phrase, or paragraph) you can so with a clever (and intimidating) formula that combines 5 Excel functions: TRIM, MID, SUBSTITUTE, REPT, and LEN.
 
-Download the example workbook here: [Extract Nth Word from a String.xlsx](/example-files/extract-nth-word-from-string.xlsx)  
+Download the example workbook here: [Extract Nth Word from a String.xlsx](https://github.com/ExcelTitan/Excel_Formulas/blob/master/extract-nth-word-from-string.xlsx)  
 
 ```vb
 ' syntax
