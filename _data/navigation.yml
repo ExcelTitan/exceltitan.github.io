@@ -23,6 +23,8 @@ sidebar-sample:
         url: /formulas/percentage-variance-with-positive-and-negative-values/
   - title: "VBA"
     children:
+      - title: Paste Values and a Keyboard Shortcut
+        url: /vba/paste-values-with-vba-with-a-keyboard-shortcut/
       - title: Hyperlink Formula With Vba
         url: /vba/hyperlink-using-the-hyperlink-formula-with-vba/
       - title: "Centre Userform - Multi Screen"
