@@ -5,7 +5,7 @@ categories:
   - formulas
 tags:
   - tables
-date: 2019-08-21 18:45:00
+date: 2019-08-21 18:43:00
 sidebar:
   title: "Popular Links"
   nav: sidebar-sample
