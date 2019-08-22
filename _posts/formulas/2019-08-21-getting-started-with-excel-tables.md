@@ -5,7 +5,7 @@ categories:
   - formulas
 tags:
   - tables
-date: 2019-08-21 18:43:00
+date: 2019-08-21 18:45:00
 sidebar:
   title: "Popular Links"
   nav: sidebar-sample
@@ -35,8 +35,8 @@ If you are bored with the predefined formats, you can easily define your own tab
 
 ![intro-to-tables-img](/imgs/intro-to-tables/introduction-to-tables-pic1.png)
 
-## Add Zebra Lines to Tables without doing Donkey Work  
-When you create a table, zebra lines come as a bonus. And when you add new rows to the table, excel takes care of zebra lining or banding automatically. You can turn on / off the banded rows feature from "design ribbon tab" as well.  
+## Add Banded Rows to Tables
+When you create a table, banded rows come as a bonus. And when you add new rows to the table, excel takes care of this automatically. You can turn on / off the banded rows feature from "design ribbon tab" as well.  
 That means you don’t need to use conditional formatting or manually format alternative rows in different color.
 
 ![intro-to-tables-img](/imgs/intro-to-tables/introduction-to-tables-gif2.gif)
@@ -91,7 +91,7 @@ When you have data in a table, you can easily load it to Power Query (Get & Tran
 ## Got multiple tables? Connect them to make a multi-table pivot
 When you have more than one table, you can also connect them using Excel’s relationship feature. This way, you can build multi-table pivots to create powerful analysis of your data.
 
-[Introduction to the Excel Data Model and Relationships](/formulas/introduction-to-the-excel-data-model-&-relationships/)
+[Introduction to the Excel Data Model and Relationships](/formulas/introduction-to-the-excel-data-model-&-relationships/){:target="_blank"}
 
 ![intro-to-tables-img](/imgs/intro-to-tables/introduction-to-tables-pic8.png)
 
