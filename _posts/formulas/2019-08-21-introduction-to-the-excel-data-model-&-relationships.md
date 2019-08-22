@@ -31,7 +31,7 @@ And you want to find out how many units you are selling by product category and 
 
 Unfortunately, you only have product ID & customer ID.
 
-### With VLOOKUP Hell,
+### With VLOOKUP Hell
 
 1. You first fetch all the customer and product data and place them in separate ranges.
 2. Then write a vlookup formula to fetch product category, another to fetch customer gender.
