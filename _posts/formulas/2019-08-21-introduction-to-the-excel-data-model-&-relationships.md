@@ -40,7 +40,7 @@ Unfortunately, you only have product ID & customer ID.
 
 Assuming you have 30,000 transactions, you have to write 60,000 VLOOKUP formulas to create this one report.
 
-### With Data Model heaven,
+### With Data Model heaven
 
 1. Create relationships between Sales, Products & Customer tables
 2. Create a pivot table
