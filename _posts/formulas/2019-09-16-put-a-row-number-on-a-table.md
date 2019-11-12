@@ -14,7 +14,7 @@ sidebar:
 Here's a simple way to get the row number of the table items.  
 It's a simple formula referencing the current cell’s row minus the row number of the table header row.  
 
-In this example I've kept the table name as Table1
+In this example I've changed the table name to **MyTable**
 ```vb
 =ROW()-ROW(MyTable[[#Headers],[Row '#]])
 ```
