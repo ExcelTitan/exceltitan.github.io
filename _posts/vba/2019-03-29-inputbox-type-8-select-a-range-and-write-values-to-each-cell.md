@@ -14,7 +14,8 @@ sidebar:
 ---
 
 InputBox Type 8 - select a range and write values to each cell
-
+  
+  
 ```vb
 '==================================================================================================
 ' ## InputBox Example 3: (Type 8) - Inputbox to select a range and write values to each cell
@@ -51,7 +52,8 @@ Sub InputBoxChangeCells()
     FirstVal = 0
     For Each rngCell In rngSelection
     FirstVal = FirstVal + 1
-    ```
+    
         rngCell.Value = FirstVal
     Next rngCell
 End Sub
+```
