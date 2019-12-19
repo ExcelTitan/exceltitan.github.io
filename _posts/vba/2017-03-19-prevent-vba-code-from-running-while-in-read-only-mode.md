@@ -1,5 +1,5 @@
 ---
-Title: "List All VBA Environment Variables"
+Title: "Prevent Vba Code from Running While in Read-only Mode"
 layout: single
 classes: wide
 categories:
