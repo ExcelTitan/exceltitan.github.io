@@ -5,7 +5,7 @@ classes: wide
 categories:
   - vba
 tags:
-  - Tables  
+  - tables  
   - deleting-data
 date: 2018-11-16
 sidebar:
