@@ -19,6 +19,7 @@ In the Standard Module place the 2 codes that (1) reset the context menu and (2)
 
 **Add the following To the ThisWorkbook Module**
 
+```vb
 Private Sub Workbook_Activate()
     '//  Add to the Context Menu
     Call AddToRightClickMenu
@@ -28,7 +29,8 @@ Private Sub Workbook_Deactivate()
     '//  Reset the Context Menu
     Call ResetRightClickMenu
 End Sub
-
+```
+  
 **Reset the context menu code**
 
 ```vb
@@ -42,9 +44,9 @@ Sub ResetRightClickMenu()
 End Sub
 ```
 
-**Add the following To a Standard Module**
-Codes To add And reset the context menu
-Add your Macro buttons To the context menu code
+**Add the following To a Standard Module**  
+Codes to add and reset the context menu.  
+Add your Macro buttons to the context menu code.
 
 ```vb
 Sub AddToRightClickMenu()
@@ -105,7 +107,7 @@ Sub AddToRightClickMenu()
 End Sub
 ```
 
-**Add the Codes that you are adding To the context menu.**
+**Add the Codes that you are adding To the context menu.**  
 Note that the name of Each macro MUST be the same As the Text in ‘OnAction’
 
 ```vb
