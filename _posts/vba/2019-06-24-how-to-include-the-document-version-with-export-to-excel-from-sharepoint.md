@@ -32,7 +32,7 @@ Then the following registry keys may not exist on your machine which are require
 
 You'll need to download and install the MSXML 4.0 pack from the following source: [http://www.microsoft.com/downloads/en/details.aspx?FamilyID=7f6c0cb4-7a5e-4790-a7cf-9e139e6819c0](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=7f6c0cb4-7a5e-4790-a7cf-9e139e6819c0)
 
-Let's do this
+## Let's do this
 
 Frist routine to run is ***GetVersionInfoFromSP()***. The version-info from the SharePoint Document Library will be read into an array. 
 
@@ -104,7 +104,7 @@ Sub GetCommandText()
 	sListWeb = objDoc.SelectSingleNode("//*/LISTWEB").Text
 	
 	Set objDoc = Nothing
-End
+End Sub
 
 '## Secondly, run the PopulateVersionInfo sub routine, this appends
 '   a column with the Version Number, with a date stamp in the header
