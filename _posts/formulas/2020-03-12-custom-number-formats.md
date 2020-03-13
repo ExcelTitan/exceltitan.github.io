@@ -1,5 +1,10 @@
 ---
 Title: "Custom Number Formats"
+toc: true
+toc_sticky: true
+toc_label: "Jump to a Section"
+toc_icon: "bolt"
+
 layout: single
 classes: wide
 categories:
@@ -188,8 +193,8 @@ There may be occasions when you would like to add text before or after your valu
 
 An asterisk symbol can be used to fill the remaining space within a cell with the character immediately following it. 
 
-| Value  | Appearance Needed                    | Format Rule | Output                                                                                                 |
-|--------|--------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
-| 592    | repeat period in front of number     | \*.0        |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592 |
-| 5.642  | repeat period in front of number     | \*.0.00     |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592.64 |
+| Value  | Appearance Needed                    | Format Rule | Output                                                               |
+|--------|--------------------------------------|-------------|----------------------------------------------------------------------|
+| 592    | repeat period in front of number     | \*.0        |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592 |
+| 5.642  | repeat period in front of number     | \*.0.00     |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592.64 |
 | 645826 | repeat underscore in front of number | \*\_#,##0   |  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_645,826 |
