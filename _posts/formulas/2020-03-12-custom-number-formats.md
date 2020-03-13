@@ -148,12 +148,14 @@ Question marks can be used to align digits when you don’t necessarily want zer
 By using the underscore symbol you can add a single space either before or after your cell value. The character immediately following the underscore determines the size of the space. In most cases, Excel users use the underscore symbol to line up positive and negative numbers that use parenthesis. 
 
 <!-- 
+add a 'W' sized space after number is 0_W
 add two 'w' spaces in front of number is _w_w0
+add a ')' sized space after positive numbers is 0_);(0)  
 -->
 | Value | Appearance Needed                            | Format Rule  | Output                              |
 |-------|----------------------------------------------|--------------|------------------------------------:|
-| 1     | add a 'W' sized space after number           | 0_W          | 1<span style="color:Gray">W</span>  |
-| 1     | add a ')' sized space after positive numbers | 0_);(0)      | 1<span style="color:Gray">)</span>  |
+| 1     | add a 'W' sized space after number           | 0\_W          | 1<span style="color:Gray">W</span>  |
+| 1     | add a ')' sized space after positive numbers | 0\_);(0)     | 1<span style="color:Gray">)</span>  |
 | 1     | add two 'w' spaces in front of number        | \_w\_w0      | <span style="color:Gray">ww</span>1 |
 
 ### Escaping Special Characters
@@ -186,6 +188,6 @@ There may be occasions when you would like to add text before or after your valu
 An asterisk symbol can be used to fill the remaining space within a cell with the character immediately following it. 
 | Value  | Appearance Needed                    | Format Rule | Output                                 |
 |--------|--------------------------------------|-------------|----------------------------------------|
-| 592    | repeat period in front of number     | \*.0        |                           ………………………592 |    
-| 5.642  | repeat period in front of number     | \*.0.00     |                          …………………592.64 |
-| 645826 | repeat underscore in front of number | \*\_#,##0   | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\645,826 |
+| 592    | repeat period in front of number     | \*.0        |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592 |
+| 5.642  | repeat period in front of number     | \*.0.00     |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592.64 |
+| 645826 | repeat underscore in front of number | \*\_#,##0   |  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_645,826 |
