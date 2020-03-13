@@ -152,11 +152,19 @@ add a 'W' sized space after number is 0_W
 add two 'w' spaces in front of number is _w_w0
 add a ')' sized space after positive numbers is 0_);(0)  
 -->
-| Value | Appearance Needed                            | Format Rule  | Output                              |
-|-------|----------------------------------------------|--------------|------------------------------------:|
-| 1     | add a 'W' sized space after number           | 0\_W          | 1<span style="color:Gray">W</span>  |
-| 1     | add a ')' sized space after positive numbers | 0\_);(0)     | 1<span style="color:Gray">)</span>  |
-| 1     | add two 'w' spaces in front of number        | \_w\_w0      | <span style="color:Gray">ww</span>1 |
+
+| Value | Appearance Needed                            | Format Rule | Output                              |
+|-------|----------------------------------------------|-------------|------------------------------------:|
+| 1     | add a 'W' sized space after number           | 0\_W        | 1<span style="color:Gray">W</span>  |
+| 1     | add a ')' sized space after positive numbers | 0\_);(0)    | 1<span style="color:Gray">)</span>  |
+| 1     | add two 'w' spaces in front of number        | \_w\_w0     | <span style="color:Gray">ww</span>1 |
+
+
+| Value | Appearance Needed                            | Format Rule |                              Output |
+|-------|----------------------------------------------|-------------|------------------------------------:|
+| 1     | add a 'W' sized space after number           | 0\_W        | 1<span style="color:Gray">W</span>  |
+| 1     | add a ')' sized space after positive numbers | 0\_);(0)    | 1<span style="color:Gray">)</span>  |
+| 1     | add two 'w' spaces in front of number        | \_w\_w0     | <span style="color:Gray">ww</span>1 |
 
 ### Escaping Special Characters
 There may be instances where you literally want to use one of the above characters instead of utilizing their special abilities. To make remove the special ability (or “escape” the ability), just place a back slash before the character. You’ll need to place a backslash before each individual symbol you wish to escape.
@@ -186,6 +194,7 @@ There may be occasions when you would like to add text before or after your valu
 ## Asterisk Symbol
 
 An asterisk symbol can be used to fill the remaining space within a cell with the character immediately following it. 
+
 | Value  | Appearance Needed                    | Format Rule | Output                                 |
 |--------|--------------------------------------|-------------|----------------------------------------|
 | 592    | repeat period in front of number     | \*.0        |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592 |
