@@ -189,12 +189,12 @@ There may be occasions when you would like to add text before or after your valu
 | 2.3     | categorize +/- numbers               | "Positive";"Negative";"Zero" | Positive |
 | 150.231 | prepend 'id' to number               | "id-"0                       |   id-150 |
 
-## Asterisk Symbol
+### Asterisk Symbol
 
 An asterisk symbol can be used to fill the remaining space within a cell with the character immediately following it. 
 
 | Value  | Appearance Needed                    | Format Rule | Output                                                               |
 |--------|--------------------------------------|-------------|----------------------------------------------------------------------|
-| 592    | repeat period in front of number     | \*.0        |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592 |
-| 5.642  | repeat period in front of number     | \*.0.00     |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592.64 |
+| 592    | repeat period in front of number     | \*.0        |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592 |
+| 5.642  | repeat period in front of number     | \*.0.00     |  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.592.64 |
 | 645826 | repeat underscore in front of number | \*\_#,##0   |  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_645,826 |
