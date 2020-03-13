@@ -67,7 +67,7 @@ There are multiple ways to navigate to the Format Cells dialog box:
 
 -   **Method 1:** Right-click on cell >> Select Format Cells…
 -   **Method 2:** Home Tab >> Number Button group >> click Grey Arrow in bottom corner
--   **Method 3:** Use the Keyboard Shortcut: ctrl + 1 (PC) | cmd + 1 (Mac)
+-   **Method 3:** Use the Keyboard Shortcut: ctrl + 1 (PC) or cmd + 1 (Mac)
 
 Once you have opened the Format Cells dialog box, you will want to navigate to the Number tab. This tab will show you a bunch of preset number format rules you can navigate through or if you would like to write your own rule, you can navigate all the way to the bottom of the Category Pane and click Custom.
 
@@ -106,12 +106,12 @@ If you place a comma in front of your “ones” place, you will gain the abilit
 
 If you place a comma behind your “ones” place, the value will VISUALLY lose three places (essentially dividing 1,000). This behavior continues to occur for each additional comma you add behind your 'ones' place.
   
-|   Value  | Appearance Needed              | Format Rule   |   Output   |
-|---------:|:-------------------------------|:-------------:|-----------:|
-|  1608047 | add thousands separator        | #,##0         |  1,608,047 |
-| -1608047 | add thousands separator        | #,##0         | -1,608,047 |
-|  1608047 | show in millions (2 decimals)  | 0,,.00        |       1.61 |
-| -1608047 | add negative () with separator | #,##0;(#,##0) | -1,608,047 |
+|   Value  | Appearance Needed              | Format Rule   |     Output   |
+|---------:|:-------------------------------|:-------------:|-------------:|
+|  1608047 | add thousands separator        | #,##0         |    1,608,047 |
+| -1608047 | add thousands separator        | #,##0         |   -1,608,047 |
+|  1608047 | show in millions (2 decimals)  | 0,,.00        |         1.61 |
+| -1608047 | add negative () with separator | #,##0;(#,##0) |  (1,608,047) |
 
 ### Zero Number
 Using a zero in a number format rule will force that number place to be shown visually. If you would like all your numbers to show three digits, insert three zeros into your rule and 1 will equal 001. This can be very usual in cleaning up your numerical values to ensure they all visually align with one another.
@@ -150,11 +150,11 @@ By using the underscore symbol you can add a single space either before or after
 <!-- 
 add two 'w' spaces in front of number is _w_w0
 -->
-| Value | Appearance Needed                            | Format Rule  | Output                                 |
-|-------|----------------------------------------------|--------------|---------------------------------------:|
-| 1     | add a 'W' sized space after number           | 0_W          | 1<span style="color:Gray">W</span>     |
-| 1     | add a ')' sized space after positive numbers | 0_);(0)      | 1<span style="color:Gray">)</span>     |
-| 1     | add two 'w' spaces in front of number        | \_w\_w0      | <span style="color:Gray">ww</span>1    |
+| Value | Appearance Needed                            | Format Rule  | Output                              |
+|-------|----------------------------------------------|--------------|------------------------------------:|
+| 1     | add a 'W' sized space after number           | 0_W          | 1<span style="color:Gray">W</span>  |
+| 1     | add a ')' sized space after positive numbers | 0_);(0)      | 1<span style="color:Gray">)</span>  |
+| 1     | add two 'w' spaces in front of number        | \_w\_w0      | <span style="color:Gray">ww</span>1 |
 
 ### Escaping Special Characters
 There may be instances where you literally want to use one of the above characters instead of utilizing their special abilities. To make remove the special ability (or “escape” the ability), just place a back slash before the character. You’ll need to place a backslash before each individual symbol you wish to escape.
@@ -167,7 +167,7 @@ There may be instances where you literally want to use one of the above characte
 
 | Value    | Appearance Needed               | Format Rule      |    Output     |
 |----------|---------------------------------|------------------|--------------:|
-| 573      | prepend three * to number       | \\\*\\\*\\\*0000 |   \*\*\*\0573 |
+| 573      | prepend three * to number       | \\\*\\\*\\\*0000 |    \*\*\*0573 |
 | 6492     | prepend @ to number             | \@0              |         @6492 |
 | 26514274 | add _ in front of last 2 digits | #\\\_00          |     265142_74 |
 
@@ -184,8 +184,8 @@ There may be occasions when you would like to add text before or after your valu
 ## Asterisk Symbol
 
 An asterisk symbol can be used to fill the remaining space within a cell with the character immediately following it. 
-| Value  | Appearance Needed                    | Format Rule | Output             |
-|--------|--------------------------------------|-------------|--------------------|
-| 592    | repeat period in front of number     | \*.0         | ………………………592       
-| 5.642  | repeat period in front of number     | \*.0.00      | …………………592.64      |
-| 645826 | repeat underscore in front of number | \*\_#,##0     | \___________\645,826 |
+| Value  | Appearance Needed                    | Format Rule | Output                                 |
+|--------|--------------------------------------|-------------|----------------------------------------|
+| 592    | repeat period in front of number     | \*.0        |                           ………………………592 |    
+| 5.642  | repeat period in front of number     | \*.0.00     |                          …………………592.64 |
+| 645826 | repeat underscore in front of number | \*\_#,##0   | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\645,826 |
