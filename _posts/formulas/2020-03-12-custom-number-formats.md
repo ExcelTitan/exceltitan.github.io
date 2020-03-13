@@ -13,6 +13,8 @@ sidebar:
 
 ---
 
+<!-- For ease of reading the .md file I have added this section in as there as backslash \ characters used in the formatting rules, the backslash is also a way to escape special characters, to avoid a mess, I will repeat the rules in a comment to avoid confusion.
+-->
 # What Are Custom Number Formats?
 
 Custom number formats control how numbers are look in Excel. The key benefit is that they change how a number looks without changing any data.
@@ -49,7 +51,9 @@ There are four parts or sections to a Custom Number Format rule. The **first sec
 3.  If the number equals zero then do this…
 4.  If the value is not a number then do this…   
 
-``` Positive; Negative; Zero; Text```
+``` 
+Positive; Negative; Zero; Text
+```
 
 ### A Few Caveats
 
@@ -61,9 +65,9 @@ In order to write you own custom number format rules, you will need to navigate 
 
 There are multiple ways to navigate to the Format Cells dialog box:
 
--   [Method 1] Right-click on cell >> Select Format Cells…
--   [Method 2] Home Tab >> Number Button group >> click Grey Arrow in bottom corner
--   [Method 3] Use the Keyboard Shortcut: ctrl + 1 (PC) | cmd + 1 (Mac)
+-   **Method 1:** Right-click on cell >> Select Format Cells…
+-   **Method 2:** Home Tab >> Number Button group >> click Grey Arrow in bottom corner
+-   **Method 3:** Use the Keyboard Shortcut: ctrl + 1 (PC) | cmd + 1 (Mac)
 
 Once you have opened the Format Cells dialog box, you will want to navigate to the Number tab. This tab will show you a bunch of preset number format rules you can navigate through or if you would like to write your own rule, you can navigate all the way to the bottom of the Category Pane and click Custom.
 
@@ -92,7 +96,7 @@ The @ symbol is used to control where your text value shows up in your rule. You
 | Value   | Appearance Needed             | Format Rule  | Output                              |
 |:--------|:------------------------------|:-------------|:------------------------------------|
 | Car     | turn text font colour blue    | [Blue]@      | <span style="color:blue">Car</span> |
-| i99603  | append 'ID' to the text       | @ " - ID"    | i99603 - ID                         |
+| i99603  | append 'ID' to the text       | @" - ID"     | i99603 - ID                         |
 | Sparrow | prepent 'Captain' to the text | "Captain. "@ | Captain. Sparrow                    |
 
 ### Comma Symbol
@@ -100,15 +104,14 @@ The comma symbol can be used to separate your numbers thousands or to round larg
 
 If you place a comma in front of your “ones” place, you will gain the ability to see a comma separate your value every three places. You only need to use a single comma in order to trigger this format.
 
-If you place a comma behind your “ones” place, the value will VISUALLY lose three places (essentially dividing 1,000). This behavior continues to occur for each additional comma you add behind your “ones” place.
+If you place a comma behind your “ones” place, the value will VISUALLY lose three places (essentially dividing 1,000). This behavior continues to occur for each additional comma you add behind your 'ones' place.
   
-  
-|   Value  | Appearance Needed              | Format Rule   |   Output |
-|---------:|:-------------------------------|:-------------:|---------:|
-|  1608047 | add thousands separator        | #,##0         |  1608047 |
-| -1608047 | add thousands separator        | #,##0         | -1608047 |
-|  1608047 | show in millions (2 decimals)  | 0,,.00        |     1.61 |
-| -1608047 | add negative () with separator | #,##0;(#,##0) | -1608047 |
+|   Value  | Appearance Needed              | Format Rule   |   Output   |
+|---------:|:-------------------------------|:-------------:|-----------:|
+|  1608047 | add thousands separator        | #,##0         |  1,608,047 |
+| -1608047 | add thousands separator        | #,##0         | -1,608,047 |
+|  1608047 | show in millions (2 decimals)  | 0,,.00        |       1.61 |
+| -1608047 | add negative () with separator | #,##0;(#,##0) | -1,608,047 |
 
 ### Zero Number
 Using a zero in a number format rule will force that number place to be shown visually. If you would like all your numbers to show three digits, insert three zeros into your rule and 1 will equal 001. This can be very usual in cleaning up your numerical values to ensure they all visually align with one another.
@@ -134,30 +137,39 @@ The pound (or hash) symbol serves as an optional placeholder for digits if they 
 
 Question marks can be used to align digits when you don’t necessarily want zeros to show up as numerical placeholders. When a question mark resides in a place where no value is provided, a space will be added (shown in grey below) to maintain the alignment of the number.
 
-| Value  | Appearance Needed         | Format Rule |                                      Output |
-|--------|---------------------------|-------------|--------------------------------------------:|
-| 63.7   | align to 3 decimal places | 0.???       | 63.7<span style="color:LightGray">00</span> |
-| 63.79  | align to 3 decimal places | 0.???       | 63.79<span style="color:LightGray">0</span> |
-| 63.791 | align to 3 decimal places | 0.???       |                                      63.791 |
-| 63     | align to 3 decimal places | 0.???       | 63.<span style="color:LightGray">000</span> |
+| Value  | Appearance Needed         | Format Rule |                                 Output |
+|--------|---------------------------|-------------|---------------------------------------:|
+| 63.7   | align to 3 decimal places | 0.???       | 63.7<span style="color:Gray">00</span> |
+| 63.79  | align to 3 decimal places | 0.???       | 63.79<span style="color:Gray">0</span> |
+| 63.791 | align to 3 decimal places | 0.???       |                                 63.791 |
+| 63     | align to 3 decimal places | 0.???       | 63.<span style="color:Gray">000</span> |
 
 ### Underscore Symbol
 By using the underscore symbol you can add a single space either before or after your cell value. The character immediately following the underscore determines the size of the space. In most cases, Excel users use the underscore symbol to line up positive and negative numbers that use parenthesis. 
 
-| Value | Appearance Needed                            | Format Rule | Output                                      |
-|-------|----------------------------------------------|-------------|--------------------------------------------:|
-| 1     | add a 'W' sized space after number           | 0_W         | 1<span style="color:LightGray">W</span>     |
-| 1     | add a ')' sized space after positive numbers | 0_);(0)     | 1<span style="color:LightGray">)</span>     |
-| 1     | add tow 'w' spaces in front of number        | _w_w0       | <span style="color:LightGray">ww</span>1    |
+<!-- 
+add two 'w' spaces in front of number is _w_w0
+-->
+| Value | Appearance Needed                            | Format Rule  | Output                                 |
+|-------|----------------------------------------------|--------------|---------------------------------------:|
+| 1     | add a 'W' sized space after number           | 0_W          | 1<span style="color:Gray">W</span>     |
+| 1     | add a ')' sized space after positive numbers | 0_);(0)      | 1<span style="color:Gray">)</span>     |
+| 1     | add two 'w' spaces in front of number        | \_w\_w0      | <span style="color:Gray">ww</span>1    |
 
 ### Escaping Special Characters
 There may be instances where you literally want to use one of the above characters instead of utilizing their special abilities. To make remove the special ability (or “escape” the ability), just place a back slash before the character. You’ll need to place a backslash before each individual symbol you wish to escape.
 
-| Value    | Appearance Needed               | Format Rule |    Output |
-|----------|---------------------------------|-------------|----------:|
-| 573      | prepend three * to number       | \*\*\*0000  |   ***0573 |
-| 6492     | prepend @ to number             | \@0         |     @6492 |
-| 26514274 | add _ in front of last 2 digits | #\_00       | 265142_74 |
+<!-- 
+- prepent three * to a number format rule is \*\*\*0000 
+- prepend @ to number is \@0 
+- add _ in front of last 2 digits is #\_00
+-->
+
+| Value    | Appearance Needed               | Format Rule      |    Output     |
+|----------|---------------------------------|------------------|--------------:|
+| 573      | prepend three * to number       | \\\*\\\*\\\*0000 |   \*\*\*\0573 |
+| 6492     | prepend @ to number             | \@0              |         @6492 |
+| 26514274 | add _ in front of last 2 digits | #\\\_00          |     265142_74 |
 
 ### Adding Text
 There may be occasions when you would like to add text before or after your values but still would like to perform spreadsheet math with your data. 
@@ -174,6 +186,6 @@ There may be occasions when you would like to add text before or after your valu
 An asterisk symbol can be used to fill the remaining space within a cell with the character immediately following it. 
 | Value  | Appearance Needed                    | Format Rule | Output             |
 |--------|--------------------------------------|-------------|--------------------|
-| 592    | repeat period in front of number     | *.0         | ………………………592       |
-| 5.642  | repeat period in front of number     | *.0.00      | …………………592.64      |
-| 645826 | repeat underscore in front of number | *_#,##0     | ___________645,826 |
+| 592    | repeat period in front of number     | \*.0         | ………………………592       
+| 5.642  | repeat period in front of number     | \*.0.00      | …………………592.64      |
+| 645826 | repeat underscore in front of number | \*\_#,##0     | \___________\645,826 |
