@@ -1,6 +1,10 @@
 ---
 Title: "Custom Number Formats"
 layout: single
+toc: true
+toc_sticky: true 
+toc_label: "Jump to a Section"
+toc_icon: "bolt"
 categories:
   - formulas
 tags:
@@ -9,8 +13,7 @@ date: 2020-03-12 18:43:00
 sidebar:
   title: "Popular Links"
   nav: sidebar-sample
-toc: true
-toc_sticky: true  
+ 
 ---
 
 <!-- For ease of reading the .md file I have added this section in as there as backslash \ characters used in the formatting rules, the backslash is also a way to escape special characters, to avoid a mess, I will repeat the rules in a comment to avoid confusion.
