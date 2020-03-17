@@ -11,8 +11,6 @@ sidebar:
   title: "Popular Links"
   nav: sidebar-sample
 toc: true
-toc_label: "Jump to a Section"
-toc_icon: "bolt"
 toc_sticky: true  
 ---
 
