@@ -19,19 +19,20 @@ Manually typing each option for a drop-down list in word ***(drop-down list cont
 ## Getting our List Set Up
 There's a couple things we have to do first:  
 
-**Excel**
-- get your list into an excel workbook
-- do not put a header in A1, your first drop-down option goes in A1
-- your list options only in Column A
-- save and close the workbook
+### Excel
+1. get your list into an excel workbook
+2. do not put a header in A1, your first drop-down option goes in A1
+3. your list options only in Column A
+4. save and close the workbook
 
-**Word**
-- select the drop-down list control by clicking on the 3 dots on the top left
+### Word
+1. create a combo box (drop-down) content control in Word, from the Developer tab
+2. select the combo box (drop-down) content control by clicking on the 3 dots on the top left
 
-**VBE Window**
-- VBA Reference to the Excel Object Model is required, via Tools &rarr; References &rarr; Microsoft Excel...
-- rename the workbook path and sheet name to your requirements
-- run the macro
+### VBE Window (Word)
+1. VBA Reference to the Excel Object Model is required, via Tools &rarr; References &rarr; Microsoft Excel...
+2. rename the workbook path and sheet name to your requirements
+3. run the macro
 
 ```vb
 '===================================================================================================
