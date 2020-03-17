@@ -31,7 +31,7 @@ thead {
 }
 
 th {
-  font-colour: #203764; //new font colour 203764, medium dark blue
+  color: #203764; //new font colour 203764, medium dark blue
   padding: 0.5em;
   font-weight: bold;
   text-align: left;
@@ -46,7 +46,7 @@ td {
 
 // new colour banding
 tr:nth-child(even) {
-  background-color: #fafafafa;
+  background-color: #f2f2f2;
 }
 
 tr,
