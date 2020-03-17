@@ -1,7 +1,6 @@
 ---
 Title: "Custom Number Formats"
 layout: single
-classes: wide
 categories:
   - formulas
 tags:
