@@ -17,14 +17,21 @@ table {
 }
 
 thead {
+  /* remove background colour, make borders 1px thick, not 2pm
   background-color: $border-color;
   border-bottom: 2px solid mix(#000, $border-color, 25%);
   border-top: 2px solid mix(#000, $border-color, 25%);
   border-left: 1px solid mix(#000, $border-color, 25%);
   border-right: 1px solid mix(#000, $border-color, 25%);
+  */
+  border-top: 1px solid mix(#000, $border-color, 25%);
+  border-bottom: 1px solid mix(#000, $border-color, 25%);
+  border-left: 1px solid mix(#000, $border-color, 25%);
+  border-right: 1px solid mix(#000, $border-color, 25%);
 }
 
 th {
+  font-colour: #203764; //new font colour 203764, medium dark blue
   padding: 0.5em;
   font-weight: bold;
   text-align: left;
@@ -35,6 +42,11 @@ td {
   border-bottom: 1px solid mix(#000, $border-color, 25%);
   border-left: 1px solid mix(#000, $border-color, 25%);
   border-right: 1px solid mix(#000, $border-color, 25%);
+}
+
+// new colour banding
+tr:nth-child(even) {
+  background-color: #fafafafa;
 }
 
 tr,
