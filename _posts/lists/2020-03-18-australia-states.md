@@ -13,7 +13,7 @@ sidebar:
 
 List of Australian States and their Capital Cities.  
    
-<table ="tableState">
+<table id="tableState">
 <thead><tr class="tableizer-firstrow"><th>State</th><th>Capital City</th><th>Abbr</th></tr></thead><tbody>
  <tr><td>Australian Capital Territory</td><td>Canberra</td><td>ACT</td></tr>
  <tr><td>New South Wales</td><td>Sydney</td><td>NSW</td></tr>
