@@ -10,6 +10,42 @@ sidebar:
 
 ---
 
+    <script type="text/javascript">
+        function selectElementContents(el) {
+            var body = document.body, range, sel;
+            if (document.createRange && window.getSelection) {
+                range = document.createRange();
+                sel = window.getSelection();
+                sel.removeAllRanges();
+                try {
+                    range.selectNodeContents(el);
+                    sel.addRange(range);
+                } catch (e) {
+                    range.selectNode(el);
+                    sel.addRange(range);
+                }
+            } else if (body.createTextRange) {
+                range = body.createTextRange();
+                range.moveToElementText(el);
+                range.select();
+                range.execCommand("Copy");
+            }
+        }
+
+    </script>
+
+<table id="table">
+    <thead>
+        <tr><th>Heading</th><th>Heading</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>cell</td><td>cell</td></tr>
+    </tbody>
+</table>
+
+<input type="button" value="select table"
+   onclick="selectElementContents( document.getElementById('table') );">
+   
 List of Australian States and their Capital Cities.  
    
 <!-- 
