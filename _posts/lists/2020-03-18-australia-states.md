@@ -13,7 +13,7 @@ sidebar:
 
 List of Australian States and their Capital Cities.  
    
-<table ="table">
+<table ="tableState">
 <thead><tr class="tableizer-firstrow"><th>State</th><th>Capital City</th><th>Abbr</th></tr></thead><tbody>
  <tr><td>Australian Capital Territory</td><td>Canberra</td><td>ACT</td></tr>
  <tr><td>New South Wales</td><td>Sydney</td><td>NSW</td></tr>
@@ -23,11 +23,10 @@ List of Australian States and their Capital Cities.
  <tr><td>Tasmania</td><td>Hobart</td><td>TAS</td></tr>
  <tr><td>Victoria</td><td>Melbourne</td><td>VIC</td></tr>
  <tr><td>Western Australia</td><td>Perth</td><td>WA</td></tr>
-</tbody>
-</table>   
+</tbody></table>   
+  
 
-
-<input type="button" class="btn--primary" value="select table" onclick="selectElementContents( document.getElementById('table') );">
+<input type="button" class="btn--primary" value="select table" onclick="selectElementContents( document.getElementById('tableStart') );">
 
 
 <!-- 
