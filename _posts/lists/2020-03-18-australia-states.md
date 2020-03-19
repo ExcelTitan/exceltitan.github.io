@@ -10,10 +10,10 @@ sidebar:
 
 ---
 
-List of states in australia
+## List of States in australia
 
 <input type="button" value="select"
-   onclick="selectElementContents( document.getElementById('myCode') );">
+   onclick="selectElementContents( document.getElementById('tableState') );">
    
 <!-- 
 | State                        | Capital City | Abbr |
@@ -28,7 +28,7 @@ List of states in australia
 | Western Australia            | Perth        | WA   |
 -->
 
-<table id="tableId">  
+<table id="tableState">  
 <thead><tr class="tableizer-firstrow"><th>State</th><th>Capital City</th><th>Abbr</th></tr></thead><tbody>
  <tr><td>Australian Capital Territory</td><td>Canberra</td><td>ACT</td></tr>
  <tr><td>New South Wales</td><td>Sydney</td><td>NSW</td></tr>
@@ -40,30 +40,3 @@ List of states in australia
  <tr><td>Western Australia</td><td>Perth</td><td>WA</td></tr>
 </tbody>
 </table>
-
-
-    function selectElementContents(el) {
-        var body = document.body, range, sel;
-        if (document.createRange && window.getSelection) {
-            range = document.createRange();
-            sel = window.getSelection();
-            sel.removeAllRanges();
-            try {
-                range.selectNodeContents(el);
-                sel.addRange(range);
-            } catch (e) {
-                range.selectNode(el);
-                sel.addRange(range);
-            }
-            document.execCommand("copy")
-            alert('copied');
-
-        } else if (body.createTextRange) {
-            range = body.createTextRange();
-            range.moveToElementText(el);
-            range.select();
-            range.execCommand("Copy");
-            alert('copied')
-        }
-    }
-    
