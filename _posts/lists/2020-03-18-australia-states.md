@@ -26,7 +26,7 @@ List of Australian States and their Capital Cities.
 </tbody></table>   
   
 
-<input type="button" class="btn--primary" value="select table" onclick="selectElementContents( document.getElementById('tableStart') );">
+<input type="button" class="btn--primary" value="select table" onclick="selectElementContents( document.getElementById('tableState') );">
 
 
 <!-- 
