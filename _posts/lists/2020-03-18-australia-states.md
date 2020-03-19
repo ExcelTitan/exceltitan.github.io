@@ -10,10 +10,6 @@ sidebar:
 
 ---
 
-<head>
-	<script type="text/javascript" src="assets/js/plugins/select-content.js"></script>
-</head>
-
 List of Australian States and their Capital Cities.  
 
 
