@@ -15,8 +15,7 @@ List of states in australia
 <input type="button" value="select"
    onclick="selectElementContents( document.getElementById('myCode') );">
    
-!-->
-
+<!-- 
 | State                        | Capital City | Abbr |
 |------------------------------|--------------|------|
 | Australian Capital Territory | Canberra     | ACT  |
@@ -27,11 +26,9 @@ List of states in australia
 | Tasmania                     | Hobart       | TAS  |
 | Victoria                     | Melbourne    | VIC  |
 | Western Australia            | Perth        | WA   |
-
 -->
 
 <table id="tableId">  
-<table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>State</th><th>Capital City</th><th>Abbr</th></tr></thead><tbody>
  <tr><td>Australian Capital Territory</td><td>Canberra</td><td>ACT</td></tr>
  <tr><td>New South Wales</td><td>Sydney</td><td>NSW</td></tr>
@@ -41,7 +38,5 @@ List of states in australia
  <tr><td>Tasmania</td><td>Hobart</td><td>TAS</td></tr>
  <tr><td>Victoria</td><td>Melbourne</td><td>VIC</td></tr>
  <tr><td>Western Australia</td><td>Perth</td><td>WA</td></tr>
-</tbody></table>
-
-
+</tbody>
 </table>
