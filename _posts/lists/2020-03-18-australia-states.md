@@ -10,6 +10,9 @@ sidebar:
 
 ---
 
+List of Australian States and their Capital Cities.  
+
+
 <input type="button" class="btn--primary" value="Select Table"
    onclick="selectElementContents( document.getElementById('tableState') );">
 
