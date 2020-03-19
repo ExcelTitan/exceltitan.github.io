@@ -14,15 +14,15 @@ sidebar:
 List of Australian States and their Capital Cities.  
    
 <table id="tableState">
-<thead><tr class="tableizer-firstrow"><th>State</th><th>Capital City</th><th>Abbr</th></tr></thead><tbody>
- <tr><td>Australian Capital Territory</td><td>Canberra</td><td>ACT</td></tr>
- <tr><td>New South Wales</td><td>Sydney</td><td>NSW</td></tr>
- <tr><td>Northern Territory</td><td>Darwin</td><td>NT</td></tr>
- <tr><td>Queensland</td><td>Brisbane</td><td>QLD</td></tr>
- <tr><td>South Australia</td><td>Adelaide</td><td>SA</td></tr>
- <tr><td>Tasmania</td><td>Hobart</td><td>TAS</td></tr>
- <tr><td>Victoria</td><td>Melbourne</td><td>VIC</td></tr>
- <tr><td>Western Australia</td><td>Perth</td><td>WA</td></tr>
+<thead><th>State</th><th>Abbr</th><th>Capital City</th></tr></thead><tbody>
+ <tr><td>Australian Capital Territory</td><td>ACT</td><td>Canberra</td></tr>
+ <tr><td>New South Wales</td><td>NSW</td><td>Sydney</td></tr>
+ <tr><td>Northern Territory</td><td>NT</td><td>Darwin</td></tr>
+ <tr><td>Queensland</td><td>QLD</td><td>Brisbane</td></tr>
+ <tr><td>South Australia</td><td>SA</td><td>Adelaide</td></tr>
+ <tr><td>Tasmania</td><td>TAS</td><td>Hobart</td></tr>
+ <tr><td>Victoria</td><td>VIC</td><td>Melbourne</td></tr>
+ <tr><td>Western Australia</td><td>WA</td><td>Perth</td></tr>
 </tbody></table>   
   
 
@@ -30,16 +30,16 @@ List of Australian States and their Capital Cities.
 
 
 <!-- 
-| State                        | Capital City | Abbr |
-|------------------------------|--------------|------|
-| Australian Capital Territory | Canberra     | ACT  |
-| New South Wales              | Sydney       | NSW  |
-| Northern Territory           | Darwin       | NT   |
-| Queensland                   | Brisbane     | QLD  |
-| South Australia              | Adelaide     | SA   |
-| Tasmania                     | Hobart       | TAS  |
-| Victoria                     | Melbourne    | VIC  |
-| Western Australia            | Perth        | WA   |
+| State                        | Abbr | Capital City |
+|------------------------------|------|--------------|
+| Australian Capital Territory | ACT  | Canberra     |
+| New South Wales              | NSW  | Sydney       |
+| Northern Territory           | NT   | Darwin       |
+| Queensland                   | QLD  | Brisbane     |
+| South Australia              | SA   | Adelaide     |
+| Tasmania                     | TAS  | Hobart       |
+| Victoria                     | VIC  | Melbourne    |
+| Western Australia            | WA   | Perth        |
 -->
 
 
