@@ -11,26 +11,9 @@ sidebar:
 ---
 
 
-<table id="table">  
-<thead><tr class="tableizer-firstrow"><th>State</th><th>Capital City</th><th>Abbr</th></tr></thead><tbody>
- <tr><td>Australian Capital Territory</td><td>Canberra</td><td>ACT</td></tr>
- <tr><td>New South Wales</td><td>Sydney</td><td>NSW</td></tr>
- <tr><td>Northern Territory</td><td>Darwin</td><td>NT</td></tr>
- <tr><td>Queensland</td><td>Brisbane</td><td>QLD</td></tr>
- <tr><td>South Australia</td><td>Adelaide</td><td>SA</td></tr>
- <tr><td>Tasmania</td><td>Hobart</td><td>TAS</td></tr>
- <tr><td>Victoria</td><td>Melbourne</td><td>VIC</td></tr>
- <tr><td>Western Australia</td><td>Perth</td><td>WA</td></tr>
-</tbody>
-</table>
-
-
-<input type="button" value="select table" class="btn--primary"
-   onclick="selectElementContents( document.getElementById('table') );">
-   
 List of Australian States and their Capital Cities.  
    
-<!-- 
+
 | State                        | Capital City | Abbr |
 |------------------------------|--------------|------|
 | Australian Capital Territory | Canberra     | ACT  |
@@ -41,6 +24,6 @@ List of Australian States and their Capital Cities.
 | Tasmania                     | Hobart       | TAS  |
 | Victoria                     | Melbourne    | VIC  |
 | Western Australia            | Perth        | WA   |
--->
+
 
 
