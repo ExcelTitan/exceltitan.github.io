@@ -15,7 +15,7 @@ sidebar:
 
 Here is a method to repeat the values in Column 'A', (n) number of times required in Column 'B' outputting the results in Column 'C'. The Formula is an Array Formula requiring you to press CTRL+SHIFT+ENTER. 
 
-So with a list in Column A and the respective 'X' times to repeat the elements of the list in Column 'B', enter the following Array Formula into Column 'C'. 
+So with a list in Column A and the respective 'n' times to repeat the elements of the list in Column 'B', enter the following Array Formula into Column 'C'. 
 
 You will need to extend the Ranges if you want to add more Products to the list. 
 
