@@ -15,10 +15,10 @@ sidebar:
 Sample Table Data of Sales
 
 
+<script src="https://gist.github.com/ExcelTitan/a915384bfc03d557999145eabb746eeb.js"></script>  
 
-<script src="https://gist.github.com/ExcelTitan/a915384bfc03d557999145eabb746eeb.js"></script>
-
-
+<br><br>  
+  
 | Order Date | Rep       | Region | Item    | Units Sold | Unit Price | Total Sale |
 |------------|-----------|--------|---------|------------|------------|------------|
 | 1/01/2020  | Kivell    | East   | Pencil  | 4          | 0.99       | 3.96       |
