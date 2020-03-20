@@ -15,6 +15,7 @@ sidebar:
 Sample Table Data of Sales
 
 <a href="#" name="MicrosoftExcelButton"></a>
+
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>Order Date</th><th>Rep</th><th>Region</th><th>Item</th><th>Units Sold</th><th>Unit Price</th><th>Total Sale</th></tr></thead><tbody>
  <tr><td>1/01/2020</td><td>Kivell</td><td>East</td><td>Pencil</td><td>4</td><td>0.99</td><td>3.96</td></tr>
@@ -172,11 +173,16 @@ Sample Table Data of Sales
  <tr><td>30/06/2020</td><td>Allan</td><td>West</td><td>Pen Set</td><td>2</td><td>4.49</td><td>8.98</td></tr>
 </tbody>
 </table>
-<script type="text/javascript" src="http://r.office.microsoft.com/r/rlidExcelButton?v=1&kip=1"></script>
 
-<!--
+<script src="https://r.office.microsoft.com/r/rlidExcelButton?v=1&kip=1"></script>
+
+
 <script src="https://gist.github.com/ExcelTitan/a915384bfc03d557999145eabb746eeb.js"></script>  
-<br><br>   
+
+
+<br><br> 
+<!--
+  
 | Order Date | Rep       | Region | Item    | Units Sold | Unit Price | Total Sale |
 |------------|-----------|--------|---------|------------|------------|------------|
 | 1/01/2020  | Kivell    | East   | Pencil  | 4          | 0.99       | 3.96       |
