@@ -5,7 +5,7 @@ classes: wide
 categories:
   - vba
 tags:
-  - Interface and formatting  
+  - interface-formatting
   - Printing
 date: 2018-11-16
 sidebar:
