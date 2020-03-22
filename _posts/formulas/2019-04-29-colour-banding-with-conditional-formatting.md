@@ -5,7 +5,7 @@ classes: wide
 categories:
   - formulas
 tags:
-  - Interface and formatting
+  - interface-formatting
 date: 2019-04-29 18:00:00
 sidebar:
   title: "Popular Links"
