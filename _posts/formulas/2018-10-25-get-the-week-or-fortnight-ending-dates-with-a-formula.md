@@ -21,9 +21,9 @@ These formulas are great for when you have to find the week ending date or even 
 <br>
 Calculating which fortnight a date falls in relies on you having already set up a range of dates that the fortnight falls in.
 <br>
-Download the example workbook here: [Week Ending and Fortnight Ending Dates.xlsx](/example-files/we-and-fne-dates.xlsx)  
+Download the example workbook here: [Week Ending and Fortnight Ending Dates.xlsx](/example-files/week-ending-and-fortnight-ending-dates.xlsx)  
 <br>
-  
+
 ## Week Ending Date Functions
 The example workbook provides 2 different formulas to get the week ending date:
 - Weekday - [support.office.com: weekday function](https://support.office.com/en-us/article/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a?NS=EXCEL&Version=16&SysLcid=1033&UiLcid=1033&AppVer=ZXL160&HelpId=xlmain11.chm60118&ui=en-US&rs=en-US&ad=US)
@@ -36,14 +36,14 @@ My opinion is that the Weekday function is easier to use.
 Looking at the below table, the formulas are referencing D2 which has the date 25/10/2018 (Thursday).  
 
 ```vb
-' syntax 
+' syntax
 WEEKDAY(serial_number, [return_type])
 
-' Formula to get the week ending date, D2 has the date as a reference. 
+' Formula to get the week ending date, D2 has the date as a reference.
 ' Sunday is last day of the week in this example
 =D2+(7-WEEKDAY(D2, 2))
 ```
-  
+
 | ~     | **A**                    | **B**           | **C**                   |
 |-------|--------------------------|-----------------|-------------------------|
 | **1** | **Last Day of the Week** | **Week Ending** | **Formula**             |
@@ -56,7 +56,7 @@ WEEKDAY(serial_number, [return_type])
 | **8** | Sunday                   | 28/10/2018      | =D2+(7-WEEKDAY(D2, 2))  |
 
 #### Return types
-The hardest part of this formula is the return type, once you get it it's easy. 
+The hardest part of this formula is the return type, once you get it it's easy.
 <br>
 This is just asking, what is the last day of the week, using the following numbers you can change the week ending day of the week:
 - 12: Monday
@@ -73,7 +73,7 @@ Usually I use Sunday as the last day of the week so my formula is almost always 
 An interesting function using a binary method to indicate the last day of the week, a 1 is a working day and 0 is a non-working day.
 
 ```vb
-' syntax 
+' syntax
 WORKDAY.INTL(start_date, days, [weekend], [holidays])
 
 ' formula to get the week ending date, D2 has the date as a reference. Sunday is last day of the week.
@@ -123,7 +123,7 @@ A1 value is 23/11/2018
 {=MIN(IF(FN_Dates>=A1, FN_Dates))}
 ```  
 ### Vlookup formula
-As you can see the vlookup is easy, reference the date, then reference the range of fortnights, inidicate column 2 and then omit the 4th argument (range_lookup) as TRUE is default - we won't want to find an exact match here. 
+As you can see the vlookup is easy, reference the date, then reference the range of fortnights, inidicate column 2 and then omit the 4th argument (range_lookup) as TRUE is default - we won't want to find an exact match here.
 
 ### Array formula
 The array formula is also easy to understand but takes longer to type, also longer to recalculate as they are pretty much volatile. If any single one of the cells it references has changed or is volatile or has been recalculated then the array formula will evaluate ALL the cells it references.  
