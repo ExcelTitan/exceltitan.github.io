@@ -8,7 +8,7 @@ toc_icon: "bolt"
 categories:
   - formulas
 tags:
-  - Interface and formatting
+  - interface-formatting
 date: 2020-03-12 18:43:00
 sidebar:
   title: "Popular Links"
