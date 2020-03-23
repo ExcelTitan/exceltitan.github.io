@@ -33,3 +33,9 @@ sidebar-sample:
         url: /vba/copy-visible-range-to-a-new-workbook/
       - title: "Backup the active sheet"
         url: /vba/backup-and-copy-the-active-sheet/
+  - title: "Lists"
+    children:
+      - title: "Sample Data Table"
+        url: /lists/sample-data-table/
+      - title: "States in Australia"
+        url: /lists/states-in-australia/
