@@ -1,6 +1,10 @@
 ---
 Title: "Calculate Time Between Dates"
 layout: single
+toc: true
+toc_sticky: true 
+toc_label: "Jump to a Section"
+toc_icon: "bolt"
 categories:
   - formulas
 tags:
@@ -65,15 +69,20 @@ Note: Although you can use "d" in a custom number format for days, the value wil
 To get the total days, hours, and minutes between a set of start and end dates, you can adapt the formula using SUMPRODUCT like this:
 
 ```vb
-=INT(B2-A2)&" days "&TEXT(B2-A2,"h"" hrs ""m"" mins """)
+=INT(SUMPRODUCT(B2:B13-A2:A13))&" days "&TEXT(SUMPRODUCT(B2:B13-A2:A13),"h"" hrs ""m"" mins """)
 ```
 
 ![calc-time-img3](/imgs/calculate-time-between-dates/calc-time-img3.png)
 
 # Calculate Years, Months and Days
-=B2-A2
 
-Number Format**Number Format:**
+## Calculate Days:
+
+```vb
+=B2-A2
+```
+
+**Number Format:**
 
 ```
 General
