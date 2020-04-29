@@ -33,6 +33,8 @@ sidebar-sample:
         url: /vba/copy-visible-range-to-a-new-workbook/
       - title: "Backup the active sheet"
         url: /vba/backup-and-copy-the-active-sheet/
+      - title: "Extract link from a hyperlink"
+        url: /vba/extract-link-address-from-(insert)hyperlink-or-hyperlink-formula/        
   - title: "Lists"
     children:
       - title: "Sample Data Table"
