@@ -1,15 +1,12 @@
 ---
 Title: "Hide Zero (0) Values in Data Labels"
 layout: single
-toc: true
-toc_sticky: true 
-toc_label: "Jump to a Section"
 toc_icon: "bolt"
 categories:
   - formulas
 tags:
   - interface-formatting
-date: 2021-02-16 18:43:00
+date: 2021-09-16 18:43:00
 sidebar:
   title: "Popular Links"
   nav: sidebar-sample
