@@ -6,7 +6,7 @@ categories:
   - formulas
 tags:
   - interface-formatting
-date: 2021-09-16 18:43:00
+date: 2021-02-16 18:43:00
 sidebar:
   title: "Popular Links"
   nav: sidebar-sample
