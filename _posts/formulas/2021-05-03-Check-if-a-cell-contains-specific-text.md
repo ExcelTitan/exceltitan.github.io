@@ -32,8 +32,5 @@ In the example shown, the formula in D5 is:
 
 ![Check-if-a-cell-contains-specific-text](/imgs/Check-if-a-cell-contains-specific-text/Check-if-a-cell-contains-specific-text.png)
 
-## Problems with Countif
-Testing if a cell contains specific text is a bit tricky, you'd think to use Countif but that's a no go for text.
-
 
 
