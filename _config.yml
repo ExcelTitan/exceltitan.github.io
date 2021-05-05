@@ -109,6 +109,7 @@ author:
   name             : "Excel Titan"
   avatar           : "/Logo_100.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Knowledge should be shared freely, not hoarded."
+  home             : "https://www.xlttn.com/"
   location         : 
   email            :
   links:
