@@ -24,21 +24,14 @@ Download the example workbook here: [Highlight the Row and Column of the Selecte
 5. In the Rule Description field, enter one of the below formulas
 
 ```vb
-Highlight Row and Column
+' Highlight Row and Column
 =OR(CELL("col")=COLUMN(),CELL("row")=ROW())
 
-Highlight only the Row
+' Highlight only the Row
 =CELL("row")=ROW()
 
-Highlight only the Column
+' Highlight only the Column
 =CELL("col")=COLUMN()
-
-VBA Sheet Code
-Private Sub Worksheet_SelectionChange(ByVal Target As Range)
-    If Application.CutCopyMode = False Then
-        Application.Calculate
-    End If
-End Sub
 ```
 
 ## A little bit of VBA
