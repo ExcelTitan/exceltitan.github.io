@@ -49,7 +49,7 @@ The quickest way to get to the sheet level module is to right click the sheet na
 
 1. Go to the Developer tab
 2. Click on Visual Basic
-3. In the VB Editor, on the left, you will see the project explorer that lists all the open workbooks and the worksheets in it. If you can’t see it, use the keyboard shortcut `Control + R`.
+3. In the VB Editor, on the left, you will see the project explorer that lists all the open workbooks and the worksheets in it. If you can’t see it, use the keyboard shortcut Control + R.
 4. With your workbook, double-click on the sheet name in which you have the data. In this example, the data is in Sheet 1 and Sheet 2.
 5. In the code window, copy and paste the above VBA code. You’ll have to copy and paste the code for both sheets if you want this functionality in both sheets.
 6. Close the VB Editor
