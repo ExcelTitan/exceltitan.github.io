@@ -13,9 +13,12 @@ sidebar:
 
 ---
 
-Here's the simple steps to highlight the row and column of the selected cell
+Here's the simple steps to highlight the row and column of the selected cell which can be extremely useful when navigating large sets of data. Here's a little example:
 
-Download the example workbook here: [Highlight the Row and Column of the Selected Cell.xlsx](/example-files/Highlight the Row and Column of the Selected Cell.xlsm)
+![highlight-row-column](/imgs/highlight-the-row-and-column-of-the-selected-cell/highlight-the-row-and-column-of-the-selected-cell.gif)
+
+
+**Download the example workbook here:** [Highlight the Row and Column of the Selected Cell.xlsx](/example-files/Highlight the Row and Column of the Selected Cell.xlsm)
 
 1. Select the data set in which you to highlight the active row/column
 2. Go to the Home tab
