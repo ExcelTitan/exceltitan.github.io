@@ -39,36 +39,3 @@
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
 
-
-/* Code block copy button */
-    window.addEventListener("load", addCopyButton);
-    function addCopyButton(clipboard) {
-        document.querySelectorAll('pre > code').forEach(function(codeBlock) {
-            if (codeBlock.className === '') {
-                return
-            }
-            var table = codeBlock.parentNode.parentNode.parentNode.parentNode.parentNode
-            var row = table.insertRow(0);
-            var cell = row.insertCell();
-            cell.className = "lntd"
-            var cell = row.insertCell();
-            cell.innerHTML = "<BR>"
-            var button = document.createElement('button');
-            button.className = 'copy-code-button';
-            button.type = 'button';
-            button.innerText = 'Copy';
-            button.addEventListener('click', function() {
-                if (navigator.clipboard != undefined) {//Chrome
-                        navigator.clipboard.writeText(codeBlock.innerText).then(function () {
-                            console.log('Async: Copying to clipboard was successful!');
-                        }, function (err) {
-                            console.error('Async: Could not copy text: ', err);
-                        });
-                    }
-                    else if(window.clipboardData) { // Internet Explorer
-                        window.clipboardData.setData("Text", codeBlock.innerText);
-                    }
-            });
-            cell.appendChild(button)
-        });
-    }
